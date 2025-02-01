@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tabel of Contents</title>
+    <style>
+        * {
+            font-weight: bold;
+        }
+        h2{
+            text-align: center;
+            color:#000000;
+        }
+        .split{
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            overflow: scroll;
+            z-index: 1;
+            top: 0;
+        }
+        .left{
+            left: 0;
+            background-color: #000000;
+        }
+        .right{
+            right: 0;
+            background-color: #808080;
+            color: #000000;
+            width: 70%;
+        }
+        a{
+            text-decoration: none;
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+    <div class="split left">
+        <ul id="links" style="list-style-type: none;">
+            <li><a href="#overview" id="link1"><p>HTML5 OVERVIEW</p></a></li>
+            <li><a href="#syntax" id="link2"><p>HTML5 SYNTAX</p></a></li>
+            <li><a href="#attributes" id="link3"><p>HTML5 ATTRIBUTES</p></a></li>
+            <li><a href="#events" id="link4"><p>HTML5 EVENTS</p></a></li>
+            <li><a href="#forms" id="link5"><p>HTML5 WEB FORMS 2.0</p></a></li>
+            <li><a href="#advd" id="link6"><p>HTML5 AUDIO & VIDEO</p></a></li>
+        </ul>
+    </div>
+    <div class="split right">
+        <header>
+            <h2>Table of Contents</h2>
+        </header>
+
+        <ol>
+            <li>
+                <p id="overview">HTML5 OVERVIEW</p>
+                <ul>
+                    <li><p>Browser Support</p></li>
+                    <li><p>New Features</p></li>
+                    <li><p>Backward Compatibility</p></li>
+                </ul>
+            </li>
+            <li>
+                <p id="syntax">HTML5 SYNTAX</p>
+                <ul>
+                    <li><p>The DOCTYPE</p></li>
+                    <li><p>Character Encoding</p></li>
+                    <li><p>The script tag</p></li>
+                    <li><p>The link tag</p></li>
+                    <li><p>HTML5 Elements</p></li>
+                    <li><p>HTML5 Attributes</p></li>
+                    <li><p>HTML5 Document</p></li>
+                </ul>
+            </li>
+            <li>
+                <p id="attributes">HTML5 ATTRIBUTES</p>
+                <ul>
+                    <li><p>Standard Attributes</p></li>
+                    <li><p>Custom Attributes</p></li>
+                </ul>
+            </li>
+            <li><p id="events">HTML5 EVENTS</p></li>
+            <li>
+                <p id="forms">HTML5 WEB FORMS 2.0</p>
+                <ul>
+                    <li><p>The input element in HTML4</p></li>
+                    <li><p>The input element in HTML5</p></li>
+                    <li><p>The output element</p></li>
+                    <li><p>The placeholder attribute</p></li>
+                    <li><p>The autofocus attribute</p></li>
+                    <li><p>The required attribute</p></li>
+                </ul>
+            </li>
+            <li>
+                <p id="advd">HTML5 AUDIO & VIDEO</p>
+                <ul>
+                    <li><p>Embedding Video</p></li>
+                    <li><p>Video Attribute Specification</p></li>
+                    <li><p>Embedding Audio</p></li>
+                    <li><p>Audio Attribute Specification</p></li>
+                    <li><p>Handling Media Events</p></li>
+                    <li><p>Configuring Servers for Media Type</p></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
