@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chess Board Designing</title>
+  <style>
+    table, .black_square, .white_square {
+      display: block;
+      padding: 0px;
+      margin: 0px;
+    }
+    table {
+      width: 400px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 150px;
+      margin-bottom: 200px;
+    }
+    .black_square, .white_square{
+        width: 48px;
+        height: 48px;
+        float:left;
+    }
+    .white_square {
+      background-color: #FFFFFF;
+    }
+    .black_square {
+      background-color: #000000;
+    }
+    body{
+        background-color: #606060;
+    }
+    caption{
+        font-family: Georgia;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 6px;
+        background-color: #ffffff;
+        border: 3px solid #606060;
+    }
+    input[type="button"]{
+        width: 96px;
+        height: 40px;
+        float: left;
+        border-radius: 6px;
+        padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption id="table_caption">CHESS-MASTER</caption>
+    <tbody id="table_body">
+      
+      <tr>
+        <td id="QR8" class="white_square" title="Black Rook"></td>
+        <td id="QN8" class="black_square" title="Black Knight"></td>
+        <td id="QB8" class="white_square" title="Black Bishop"></td>
+        <td id="Q8" class="black_square" title="Black Queen"></td>
+        <td id="K8" class="white_square" title="Black King"></td>
+        <td id="KB8" class="black_square" title="Black Bishop"></td>
+        <td id="KN8" class="white_square" title="Black Knight"></td>
+        <td id="KR8" class="black_square" title="Black Rook"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR7" class="black_square" title="Black Pawn"></td>
+        <td id="QN7" class="white_square" title="Black Pawn"></td>
+        <td id="QB7" class="black_square" title="Black Pawn"></td>
+        <td id="Q7" class="white_square" title="Black Pawn"></td>
+        <td id="K7" class="black_square" title="Black Pawn"></td>
+        <td id="KB7" class="white_square" title="Black Pawn"></td>
+        <td id="KN7" class="black_square" title="Black Pawn"></td>
+        <td id="KR7" class="white_square" title="Black Pawn"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR6" class="white_square" title="Empty"></td>
+        <td id="QN6" class="black_square" title="Empty"></td>
+        <td id="QB6" class="white_square" title="Empty"></td>
+        <td id="Q6" class="black_square" title="Empty"></td>
+        <td id="K6" class="white_square" title="Empty"></td>
+        <td id="KB6" class="black_square" title="Empty"></td>
+        <td id="KN6" class="white_square" title="Empty"></td>
+        <td id="KR6" class="black_square" title="Empty"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR5" class="black_square" title="Empty"></td>
+        <td id="QN5" class="white_square" title="Empty"></td>
+        <td id="QB5" class="black_square" title="Empty"></td>
+        <td id="Q5" class="white_square" title="Empty"></td>
+        <td id="K5" class="black_square" title="Empty"></td>
+        <td id="KB5" class="white_square" title="Empty"></td>
+        <td id="KN5" class="black_square" title="Empty"></td>
+        <td id="KR5" class="white_square" title="Empty"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR4" class="white_square" title="Empty"></td>
+        <td id="QN4" class="black_square" title="Empty"></td>
+        <td id="QB4" class="white_square" title="Empty"></td>
+        <td id="Q4" class="black_square" title="Empty"></td>
+        <td id="K4" class="white_square" title="Empty"></td>
+        <td id="KB4" class="black_square" title="Empty"></td>
+        <td id="KN4" class="white_square" title="Empty"></td>
+        <td id="KR4" class="black_square" title="Empty"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR3" class="black_square" title="Empty"></td>
+        <td id="QN3" class="white_square" title="Empty"></td>
+        <td id="QB3" class="black_square" title="Empty"></td>
+        <td id="Q3" class="white_square" title="Empty"></td>
+        <td id="K3" class="black_square" title="Empty"></td>
+        <td id="KB3" class="white_square" title="Empty"></td>
+        <td id="KN3" class="black_square" title="Empty"></td>
+        <td id="KR3" class="white_square" title="Empty"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR2" class="white_square" title="White Pawn"></td>
+        <td id="QN2" class="black_square" title="White Pawn"></td>
+        <td id="QB2" class="white_square" title="White Pawn"></td>
+        <td id="Q2" class="black_square" title="White Pawn"></td>
+        <td id="K2" class="white_square" title="White Pawn"></td>
+        <td id="KB2" class="black_square" title="White Pawn"></td>
+        <td id="KN2" class="white_square" title="White Pawn"></td>
+        <td id="KR2" class="black_square" title="White Pawn"></td>
+      </tr>
+      
+      <tr>
+        <td id="QR1" class="black_square" title="White Rook"></td>
+        <td id="QN1" class="white_square" title="White Knight"></td>
+        <td id="QB1" class="black_square" title="White Bishop"></td>
+        <td id="Q1" class="white_square" title="White Queen"></td>
+        <td id="K1" class="black_square" title="White King"></td>
+        <td id="KB1" class="white_square" title="White Bishop"></td>
+        <td id="KN1" class="black_square" title="White Knight"></td>
+        <td id="KR1" class="white_square" title="White Rook"></td>
+      </tr>
+    </tbody>
+    <tfoot id="table_footer">
+      <tr>
+        <td>
+          <!-- Buttons for Setup, PlayOnline, PlayComputer, Withdraw -->
+          <input type="button" id="setup" value="SetUpBoard">
+          <input type="button" id="online" value="PlayOnline">
+          <input type="button" id="computer" value="PlayComputer">
+          <input type="button" id="withdraw" value="Withdraw">
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
