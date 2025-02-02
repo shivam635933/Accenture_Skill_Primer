@@ -1,0 +1,100 @@
+body { 
+    margin: 0; 
+    background-color: rgb(211, 234, 235); 
+}
+ul{
+    font-weight: bold; 
+    margin: 0; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    padding-right: 8px; 
+    width: 25%; 
+    background-color: #f1f1f1; 
+    position: fixed; 
+    height: 100%; 
+    overflow: auto; 
+}
+li a.active { 
+    background-color: #636668; 
+    } 
+li a:hover:not(.active) { 
+    background-color: #555555; 
+    color: #FFFFFF; 
+    } 
+
+li a { 
+        display: block; 
+        color: #000000; 
+        padding-top:8px; 
+        padding-bottom: 8px; 
+        padding-left: 16px; 
+        padding-right: 16px; 
+        text-decoration: none; 
+} 
+.intro{ 
+        border-style: solid; 
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+        margin-right: auto; 
+        margin-left: auto; 
+        background-color: #02050a; 
+        height: 400px; 
+        width: 800px; 
+        border-radius: 25px; 
+        color: #f1f1f1; 
+}
+div{ 
+        margin-left:25%; 
+        padding-top: 1px; 
+        padding-bottom: 1px; 
+        padding-left: 16px; 
+        padding-right: 16px; 
+        height:300px; 
+}
+header{ 
+    text-align: center; 
+    color: #FF0000; 
+    text-transform: uppercase; 
+    font-weight: bolder; 
+    text-decoration: underline overline; 
+}
+h2{
+     color: #0a57dd;
+     text-decoration: underline;
+} 
+h3 {
+    text-align: center; 
+    color: #17f7c2;
+}  
+h2,h3{ 
+    font-weight: bolder; 
+    text-transform: uppercase; 
+} 
+
+P{ 
+    margin-left: 15px; 
+    font-size: 16px; 
+} 
+
+footer { 
+    text-align: center; 
+    color: #990000; 
+    font-weight: bolder; 
+}
+.image{ 
+    width:200px; 
+    margin-right: 30px; 
+    border-radius: 25px; 
+    height: 200px; 
+    margin-left: 10px; 
+} 
+.right{ 
+    text-align: right; 
+} 
+table{ 
+    width: 800px; 
+} 
+#indiatext{ 
+    color: #dbe6e2; 
+}
