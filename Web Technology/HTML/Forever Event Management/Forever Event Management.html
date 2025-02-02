@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Vendor Registration Form</title>
+    <style>
+        *{
+            font-weight: bold;
+        }
+        body{
+            background-image: url("forever_bg.jpg");
+            background-size: cover;
+        }
+        table{
+            width: 55%;
+            height: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-spacing: 5px;
+        }
+        #foot{
+            margin-left: 600px;
+            border-spacing: 5px;
+        }
+        #submit, #reset{
+            padding: 7px;
+            font-size:15px;
+            color: #ffffff;
+            background-color: #192841;
+        }
+        img{ 
+            margin-left: 500px; 
+            margin-top: 6px; 
+            margin-bottom: 1px; 
+        } 
+
+        td{ 
+            background-color: #ffffff; 
+        } 
+        caption, table, td{ 
+            border:1px solid #000000; 
+        } 
+        caption{ 
+            font-size:20px; 
+            font-weight:bold; 
+            color: white; 
+            padding: 5px; 
+            background-color: #192841; 
+        } 
+        input[type="tel"], input[type="email"], input[type="text"],
+        select, textarea, input[type="number"], input[type="url"],
+        input[type="date"]{ 
+            width:100%;  
+        }  
+        input[type="range"]{ 
+            width:80%; 
+}
+    </style>
+    <script>
+        function show_value(val) {
+            document.getElementById("cost_value").innerText = val;
+        }
+    </script>
+</head>
+<body>
+
+<form>
+    <figure id="forever_image">
+        <img id="image1" src="forever.jpg" alt="Vendor Registration Image" height=80 width="200">an Event Management Company
+    </figure>
+
+    <table>
+        <caption id="table_caption"><h2>Vendor Registration Form</h2></caption>
+        <tbody>
+            <tr>
+                <td><label for="cname">Company Name:</label></td>
+                <td><input type="text" id="cname" name="cname" required></td>
+            </tr>
+
+            <tr>
+                <td>Type:</td>
+                <td>
+                    <fieldset>
+                        <div class="radio-group">
+                            <input type="radio" id="corporation" name="ctype" value="corporation" required>
+                            <label for="corporation">Corporation</label>
+
+                            <input type="radio" id="partnership" name="ctype" value="partnership">
+                            <label for="partnership">Partnership</label>
+
+                            <input type="radio" id="individual" name="ctype" value="individual">
+                            <label for="individual">Individual</label>
+
+                            <input type="radio" id="others" name="ctype" value="others">
+                            <label for="others">Others</label>
+                        </div>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="phno">Phone Number:</label></td>
+                <td><input type="tel" id="phno" name="phno" pattern="[789][0-9]{9}" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email ID:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="address">Location:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="50" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="link">Website Address:</label></td>
+                <td><input type="url" id="link" name="link" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="tin">TIN No:</label></td>
+                <td><input type="number" id="tin" name="tin" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="expiry">TIN No Expiry Date:</label></td>
+                <td><input type="date" id="expiry" name="expiry" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="cost">Average Project Cost:</label></td>
+                <td>
+                    <input type="range" id="cost" name="cost" min="25000" max="500000" step="1000" onchange="show_value(this.value);" required>
+                    <span id="cost_value">25000</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="profile">Upload Images of Licence, PAN & Facade:</label></td>
+                <td><input type="file" id="profile" name="profile" multiple required></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="foot">
+        <input type="submit" id="submit" value="REGISTER">
+        <input type="reset" id="reset" value="CLEAR">
+    </div>
+</form>
+
+</body>
+</html>
