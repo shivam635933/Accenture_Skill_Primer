@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Table Booking</title> 
+    <script src="script.js"></script> 
+    <style> 
+        body { 
+            background-color: sandybrown; 
+            font-weight: bold; 
+        } 
+        td, tr, table, h2 { 
+            border: 2px solid #280341; 
+            background-color: snow; 
+            width: 40%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            border-radius: 5px; 
+            padding: 8px; 
+            color: #280341; 
+            text-align: center; 
+        }        
+        #submit { 
+            padding: 8px; 
+            width: 10%; 
+            margin-top: 2%; 
+            margin-left: 45%; 
+            cursor: pointer; 
+            font-size: 12px; 
+            background-color: #280341; 
+            color: #ffffff; 
+            font-weight: bold;
+        } 
+        #result { 
+            font-family: Verdana; 
+            color: #000000; 
+            text-align: center; 
+            font-weight:bold; 
+            font-size:18px; 
+            padding: 10px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <h2>Table Booking</h2> 
+    <form onsubmit="displayConfirmationMessage(); return false;" id="mainForm"> 
+        <table> 
+            <tr> 
+                <td>Name</td> 
+                <td><input type="text" id="name" placeholder="Please enter your name"></td> 
+            </tr> 
+            <tr> 
+                <td>Timing</td> 
+                <td> 
+                    <input type="radio" name="timing" id="1-4pm" value="1-4pm">1-4pm<br> 
+                    <input type="radio" name="timing" id="4-7pm" value="4-7pm">4-7pm<br> 
+                    <input type="radio" name="timing" id="7-10pm" value="7-10pm">7-10pm 
+                </td> 
+            </tr> 
+        </table> 
+        <input type="submit" value="Reserve Table" id="submit"/> 
+        <div id="result"></div> 
+    </form>
+</body>
+</html>
