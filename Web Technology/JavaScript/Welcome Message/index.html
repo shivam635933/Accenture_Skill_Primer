@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Welcome Message</title> 
+    <script src="script.js"></script> 
+    <style> 
+        body { 
+            margin-left: 250px; 
+            margin-top: 100px; 
+        } 
+        
+        td, tr, table { 
+            border: 1px solid #280341; 
+            width: 30%; 
+            font-size: 20px; 
+            margin-left: 250px; 
+            margin-top: 100px; 
+            border-radius: 5px; 
+            padding: 5px; 
+            color: #288341; 
+            text-align: center; 
+        } 
+        
+        #result { 
+            font-family: Bahnschrift; 
+            color: #000000; 
+            margin-left: 250px; 
+            margin-top: 30px; 
+            font-weight:bold; 
+            font-size:18px; 
+            padding:10px; 
+        } 
+    </style>
+</head> 
+<body> 
+    <form onsubmit="displayWelcomeMessage(); return false;"> 
+        <table> 
+            <tr> 
+                <td>First Name*</td> 
+                <td><input type="text" id="fname" required></td> 
+            </tr> 
+            <tr> 
+                <td>Last Name*</td> 
+                <td><input type="text" id="lname" required></td> 
+            </tr> 
+            <tr> 
+                <td colspan="2"><input type="submit" id="submit" value="Submit"/></td> 
+            </tr> 
+        </table> 
+    
+        <div id="result"></div> 
+    </form> 
+</body> 
+</html>
