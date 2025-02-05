@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Factorial Number</title> 
+    <style> 
+        body { 
+            margin-left: 150px; 
+            margin-top: 50px; 
+            background-color: lightcyan; 
+        } 
+    </style> 
+    <script src="script.js"></script> 
+</head> 
+<body> 
+    <form onsubmit="return getFunction()"> 
+        <table> 
+            <tr> 
+                <td>Enter the number to get its factorial number</td> 
+                <td><input type="number" id="fact" name="fact" min=1 required/></td> 
+            </tr> 
+            <tr> 
+                <td colspan="2"><input type="submit" id="factbtn" name="factbtn" value="Get Factorial Numbers"/></td> 
+            </tr> 
+        </table> 
+    <div id="result"></div> 
+    </form> 
+</body> 
+</html>
