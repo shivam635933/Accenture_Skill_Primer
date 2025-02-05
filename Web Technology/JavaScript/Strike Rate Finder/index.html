@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Strike Rate Finder</title> 
+    <script src="script.js"></script> 
+    <style> 
+        body { 
+            background-color: #e79211; 
+            font-weight: bold; 
+        } 
+        td, tr, table { 
+            border: 2px solid #280341; 
+            background-color: #f0f8ff; 
+            width: 40%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            border-radius: 5px; 
+            padding: 8px; 
+            color: #280341; 
+            text-align: center; 
+        } 
+        #submit { 
+            padding: 8px; 
+            width: 10%; 
+            margin-top: 2%; 
+            margin-left: 45%; 
+            cursor: pointer; 
+            font-size: 12px; 
+            background-color: #280341; 
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #result { 
+            font-family: Verdana; 
+            color: #000000; 
+            text-align: center; 
+            font-weight:bold; 
+            font-size:18px; 
+            padding:10px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <form onsubmit="displayStrikeRate(); return false;" id="mainForm"> 
+        <table> 
+            <tr> 
+                <td>Payer Name</td> 
+                <td><input type="text" id="name" placeholder="Enter player name"></td> 
+            </tr> 
+            <tr> 
+                <td>Runs Scored</td> 
+                <td><input type="number" id="runs" min="0"></td> 
+            </tr> 
+            <tr> 
+                <td>Balls Faced</td> 
+                <td><input type="number" id="balls" min="0"></td> 
+            </tr> 
+        </table> 
+        <input type="submit" value="Get Strike Rate" id="submit"/> 
+        <div id="result"></div> 
+    </form> 
+</body> 
+</html>
