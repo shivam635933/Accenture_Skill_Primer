@@ -1,0 +1,15 @@
+<html> 
+<head><script src="script.js"></script></head> 
+<body> 
+    <form onsubmit="checkAlliteration(); return false;"> 
+        <label for="char">Enter the letter</label> 
+        <input type="text" maxlength="1" id="char" name="char" pattern="[^aeiouAEIOU\d\s\W_]"> 
+        <br> 
+        <label for="alliter">Enter the sentence</label> 
+        <input type="text" name="alliter" id="alliter"> 
+        <br> 
+        <input type="submit" id="alliterbtn" value="Check Alliteration"> 
+        <div id="result"></div> 
+    </form> 
+</body> 
+</html>
