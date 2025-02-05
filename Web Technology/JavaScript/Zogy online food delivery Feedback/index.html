@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Zogy online food delivery</title> 
+    <style> 
+        table,td 
+        { 
+            text-align: center; 
+            margin-left: auto; 
+            margin-right: auto; 
+            padding-top: 10px; 
+            padding-bottom: 10px; 
+            background-color:#add8e6; 
+            color:#483d8b; 
+            border-style: double; 
+        } 
+        body{ 
+            background-color: #f8f8ff; 
+        } 
+        #result 
+        { 
+            text-align: center; 
+            color:#483d8b; 
+        } 
+    </style> 
+    <script src="script.js"></script> 
+</head> 
+<body> 
+    <form onsubmit="displayFeedbackMessage(); return false;">
+        <table> 
+            <tr> 
+                <td colspan="2"><h2>Give us Feedback</h2></td></tr> 
+                <tr><td>Enter your Name</td><td><input type="text" id="cname" pattern="^[A-Za-z][ A-Za-z]*$" required/></td></tr> 
+                <tr><td>Enter your phone number</td><td><input type="tel" id="phn" required></td></tr> 
+                <tr><td>How do you Rate our service</td><td><input type="range" id="rate" min="1" max="10" value="0" step="1" onchange="show_value(this.value);"/><span id="demo"></span></td></tr>
+            <tr> 
+                <td colspan="2"><input type="submit" id="feedback" value="Done"/></td> 
+            </tr> 
+        </table> 
+        <div id="result"></div> 
+    </form> 
+</body> 
+</html>
