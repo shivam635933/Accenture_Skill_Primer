@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Elektra Waves Concert Ticket Booking</title> 
+    <style> 
+        body{ 
+            background-image:url("concert.jpg"); 
+            opacity: 0.9; 
+            font-weight: bold; 
+        } 
+        h3, #result, caption{ 
+            color: #FFFFFF; 
+            font-family: Verdana; 
+            text-align: center; 
+        } 
+        .title{ 
+            color: #000000;  
+        } 
+        #tickettable{ 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 50%; 
+        } 
+        #costchart{ 
+            margin-left: auto; 
+            margin-right: 0; 
+        } 
+        td, th{ 
+            background-color: #ffffff; 
+            color: #000000; 
+            padding:7px;
+            border:2px solid #000000; 
+        } 
+        input[type="tel"], select, textarea, input[type="text"]{ 
+            width:97%; 
+        } 
+        input[type="range"]{ 
+            width:94%; 
+        } 
+        input::placeholder { 
+            color:black; 
+        } 
+        #submit,#clear{ 
+            color: #000000; 
+            padding:7px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+        } 
+        #buttons{ 
+            margin-left: 40%; 
+        } 
+    </style> 
+    <script src="script.js"> </script> 
+</head> 
+<body> 
+    <form onsubmit="return costCalculation();"> 
+        <h3>Elektra Waves Concert Ticket Booking</h3><br/> 
+        <table id="tickettable" > 
+            <tr><td colspan="2"><a href="#costchart" id="costchart_ref">View ticket cost chart</a></td></tr> 
+            <tr><td colspan="2" class="title">Personal Details</td></tr> 
+            <tr>
+                <td>Name</td> 
+                <td><input type="text" name="name" id="name" placeholder="Enter your name" required pattern="[A-Za-z\s]+"></td> 
+            </tr> 
+            <tr> 
+                <td>Gender</td> 
+                <td> 
+                    <input type="radio" name="gender" id="male" value="male" required>Male 
+                    <input type="radio" name="gender" id="female" value="female" required>Female 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Address</td> 
+                <td><textarea id="address" rows="4" cols="50" required placeholder="Enter your address"></textarea></td> 
+            </tr> 
+            <tr> 
+                <td>Phone Number</td> 
+                <td><input type="tel" id="phoneNumber" name="phoneNumber" pattern="[7-9]{1}[0-9]{9}" required placeholder="Enter your phone number"></td> 
+            </tr> 
+            <tr><td colspan="2" class="title">Ticket Details</td></tr> 
+            <tr> 
+                <td>No Of Tickets</td> 
+                <td><input type="range" id="noofTickets" name="noofTickets" min="5" max="40" step="1" onchange="show_value(this.value);" required><span id="demo"></span></td>
+            </tr> 
+            <tr> 
+                <td>Ticket Type</td> 
+                <td> 
+                    <select id="ticketType" name="ticketType"> 
+                    <option value="Floor">Floor</option> 
+                    <option value="Balcony">Balcony</option> 
+                    </select>
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Add Ons</td> 
+                <td> 
+                    <input type="checkbox" name="addOns" id="couponCode" value="CouponCode"/>CouponCode 
+                    <input type="checkbox" name="addons" id="refreshment" value="Refreshment"/>Refreshment 
+                </td> 
+            </tr> 
+            <tr> 
+                <td>Coupon Code</td> 
+                <td> 
+                    <input type="text" id="cc" name="cc" list="CouponCodes" required> 
+                    <datalist id="CouponCodes"> 
+                    <option value="ELEKTRA20"> 
+                    <option value="SIMBA20"> 
+                    </datalist> 
+                </td> 
+            </tr> 
+        </table> 
+        <br/><br/> 
+        <div id="buttons"> 
+            <input type="submit" value="CONFIRM BOOKING" id="submit"> 
+            <input type="reset" value="CLEAR" id="clear"> 
+        </div> 
+        <br/> 
+        <div id="result"> </div> 
+        <br/><br/>
+
+        <table id="costchart"> 
+            <caption>Ticket Cost Chart</caption> 
+            <tr> 
+                <th>Ticket Type</th> 
+                <th>Base Price</th> 
+                <th>On Booking more than 20 tickets</th> 
+                <th>On applying coupon code</th> 
+            </tr> 
+            <tr> 
+                <td>Floor</td> 
+                <td>400</td> 
+                <td>10% discount</td> 
+                <td>2% discount</td> 
+            </tr> 
+            <tr> 
+                <td>Balcony</td> 
+                <td>500</td> 
+                <td>10% discount</td> 
+                <td>2% discount</td> 
+            </tr> 
+            <tfoot> 
+                <tr> 
+                    <td colspan=4>* You must pay Rs.100 extra on choosing Refreshment!</td> 
+                </tr> 
+            </tfoot> 
+        </table> 
+    </form> 
+</body> 
+</html>
