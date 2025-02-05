@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Aqua Fish Stall</title> 
+    <script src="script.js"></script> 
+    <style> 
+        body { 
+            background-color: blanchedalmond; 
+        } 
+        h1 { 
+            color: #FFFFFF; 
+            width: 70%; 
+            font-size:25px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-color: darkblue; 
+            text-align: center; 
+        } 
+        hr { 
+            width: 70%; 
+        } 
+        th{ 
+            width: 30%; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            border-style: solid; 
+            border-width: 2px; 
+        } 
+        td { 
+            border-width: 1px; 
+            font-weight: bold; 
+            border-style: solid;
+            border: 0px; 
+            width: 30%; 
+            margin-right: auto; 
+            margin-left: auto; 
+        } 
+        #fishType, #customerDetails { 
+            width: 40%; 
+            margin-top: 5%; 
+            margin-right: auto; 
+            margin-left: auto; 
+        } 
+        #submit { 
+            font-weight: bold; 
+            margin-right: auto; 
+            margin-top: 2%; 
+            margin-left: 45%; 
+            background-color: darkblue; 
+            color: #FFFFFF; 
+            width: 11em; 
+            height: 35px; 
+        } 
+        #result { 
+            font-family: Bahnschrift; 
+            color:#000000; 
+            text-align: center; 
+            font-weight:bold; 
+            font-size:18px; 
+            padding: 10px; 
+        } 
+    </style>
+</head>
+<body>
+    <h1>Aqua Fish Stall</h1> 
+    <form onsubmit="return getDisplay()" id="mainForm"> 
+        <table id="customerDetails"> 
+            <tr> 
+                <td>Customer Name</td> 
+                <td><input type="text" id="name" placeholder="Enter your name"></td> 
+            </tr> 
+            <tr> 
+                <td>Phone Number</td> 
+                <td><input type="tel" id="phonenumber" placeholder="Enter your phone number"></td> 
+            </tr> 
+        </table><hr> 
+        <table id="fishType"> 
+            <tr> 
+                <td>Anchovy</td> 
+                <td><input type="number" id="anchovy" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Barracuda</td> 
+                <td><input type="number" id="barracuda" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Crab</td> 
+                <td><input type="number" id="crab" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>King Mackerel</td> 
+                <td><input type="number" id="kingmackerel" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Pomfret</td> 
+                <td><input type="number" id="pomfret" min="0" step="0.5"> in Kg</td>
+            </tr> 
+            <tr> 
+                <td>Prawn</td> 
+                <td><input type="number" id="prawn" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Salmon</td> 
+                <td><input type="number" id="salmon" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Sardine</td> 
+                <td><input type="number" id="sardine" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Shark</td> 
+                <td><input type="number" id="shark" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+            <tr> 
+                <td>Tilapia</td> 
+                <td><input type="number" id="tilapia" min="0" step="0.5"> in Kg</td> 
+            </tr> 
+        </table> 
+        
+        <input type="submit" value="Submit" id="submit"/> 
+        <div id="result"></div> 
+    </form> 
+</body> 
+</html>             
