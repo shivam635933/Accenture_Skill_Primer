@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title>Sign In Form</title> 
+    <style> 
+        input[type="password"], input[type="text"], input[type="button"] { 
+            width:97%; 
+        } 
+        table { 
+            background-color: #D1EDF2; 
+            padding: 10px; 
+        } 
+        #table_caption { 
+            /*fill attributes and values*/
+            text-align:left; 
+            font-weight:bold; 
+            font-variant:small-caps; 
+        } 
+        .focusedin { 
+            background-color: green; 
+        } 
+        .focusedout { 
+            background-color: grey; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <form id="signin_form"><table> 
+        <caption id="table_caption">Sign In</caption> 
+        <tr><td colspan="2"><input type="text" id="uname" placeholder="Username"/></td></tr> 
+        <tr><td colspan="2"><input type="password" id="pwd" placeholder="Password"/></td></tr> 
+        <tr>
+            <td><input type="checkbox" id="remember">Remember username</td> 
+            <td><a id="forgotpwd" href="#login">Forgot password?</a></td></tr> 
+        <tr><td colspan="2"><input type="button" id="login" value="Sign In"/></td></tr>
+        </table>
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="script.js"></script> 
+</body> 
+</html>
