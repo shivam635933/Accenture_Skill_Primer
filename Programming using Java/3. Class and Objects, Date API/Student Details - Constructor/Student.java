@@ -1,6 +1,8 @@
 public class Student{
+
     private int studentId;
     private String studentName,studentAddress,collegeName;
+
     public int getStudentId(){
         return studentId;
     }
@@ -13,6 +15,7 @@ public class Student{
     public String getCollegeName(){
         return collegeName;
     }
+    
     public Student(int id,String name,String address){
         studentId = id;
         studentName = name;
