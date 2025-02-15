@@ -1,0 +1,1 @@
+alter table Booking_Master add Constraint foreign key(Enquiry_id) references Enquiry_Master(Enquiry_id);

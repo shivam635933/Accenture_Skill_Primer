@@ -1,0 +1,1 @@
+update Customer_Master set street='No.21,Abbey Road', city = 'Denver' where C_first_name='Emma';
