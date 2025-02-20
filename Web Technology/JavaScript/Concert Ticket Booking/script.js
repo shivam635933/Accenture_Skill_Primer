@@ -5,7 +5,7 @@ function show_value(x){
 function costCalculation(){ 
     // fill javascript code here do not use Let keyword for variable intialization; instead use var. 
     var ticketType=document.getElementById("ticketType").value.trim().toLowerCase(); 
-    var ticketNo = document.getElementById("noofTickets").value; 
+    var ticketNo = document.getElementById("noOfTickets").value; 
     var couponCodeChecked = document.getElementById("couponCode").checked; 
     var refreshmentChecked = document.getElementById("refreshment").checked; 
 
