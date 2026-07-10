@@ -10,7 +10,7 @@ function displayFeedbackMessage() {
         if(rate>=1 && rate<=5) 
             document.getElementById("result").innerHTML = "Hi "+cname+" Thank you for your valuable feedback. Sorry for the inconvenience. You will be contacted by our customer care officer soon"; 
         else if(rate>5 && rate<=8) 
-            document.getElementById("result").innerHTML = "Hi "+cname+" Thank you for your valuable feedback. You can post your complaints on customercare@gmail."; 
+            document.getElementById("result").innerHTML = "Hi "+cname+" Thank you for your valuable feedback. You can post your complaints on customercare@gmail.com"; 
         else 
             document.getElementById("result").innerHTML = "Hi "+cname+" Thank you for your valuable feedback. Happy customers are our only asset"; 
     } 
