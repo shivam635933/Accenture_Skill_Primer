@@ -1,5 +1,5 @@
-select enquiry_id, cust_id 
-from enquiry_master 
-where dayname(start_date) in ('Saturday', 'Sunday') 
-and dayname (end_date) in ('Saturday', 'Sunday') 
-order by cust_id;
+SELECT enquiry_id, cust_id
+FROM enquiry_master
+WHERE DAYNAME(start_date) IN ('Saturday', 'Sunday')
+  AND DAYNAME(end_date) IN ('Saturday', 'Sunday')
+ORDER BY cust_id ASC;
